@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #000000; /* Pure Black */
+  --accent: #00fff7; /* Bright cyan neon */
+  --light-text: #e0e0e0; /* Light gray text */
+  --sub-text: #7a7a7a; /* Medium gray subtext */
+  --shadow-glow: rgba(0, 255, 247, 0.6);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--light-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  background-color: #111;
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00c8cc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--light-text);
+  font-weight: 700;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+/* Glass effect example for your components */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 247, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px var(--shadow-glow);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: var(--light-text);
+}
+
+/* Add more custom styles as needed */
+  
